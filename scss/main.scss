@@ -1,0 +1,28 @@
+/*utils*/
+@import './utils/fonts';
+@import './utils/variables';
+
+/*base*/
+@import './base/base';
+
+/*components*/
+@import './components/about-section';
+@import './components/backdrop';
+@import './components/button';
+@import './components/clients-section';
+@import './components/email';
+@import './components/first-section';
+@import './components/footer';
+@import './components/footer-form';
+@import './components/form-modal-window';
+@import './components/features-section';
+@import './components/gallery';
+@import './components/header';
+@import './components/logo';
+@import './components/mobile-menu';
+@import './components/modal-window';
+@import './components/phone';
+@import './components/team-section';
+
+/*layout*/
+@import './layout/container';

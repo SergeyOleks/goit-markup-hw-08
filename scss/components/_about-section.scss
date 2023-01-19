@@ -1,0 +1,50 @@
+/* секция чем мы занимаемся*/
+.about {
+    padding: 0 0 95px;
+
+    @media screen and (max-width:1599px) {
+            display: none;
+        }
+
+    &__head {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        height: 42px;
+        margin: 0 0 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__cart-text {
+        position: absolute;
+        /* display: inline-block; */
+        bottom: 0;
+        left: 0;
+        text-transform: uppercase;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+
+        background-color: var(--background-card-text);
+        color: var(--backgrount-color);
+        text-align: center;
+        line-height: 70px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+

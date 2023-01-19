@@ -1,0 +1,79 @@
+.footer-form{
+
+    &__label {
+        display: inline-block;
+        margin: 14px 0;
+        width: 350px;
+
+        @media screen and (min-width:768px) and (max-width:1599px) {
+                text-align: center;
+            }
+    }
+
+    &__container {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        @media screen and (max-width:1599px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        @media screen and (min-width:768px) and (max-width:1599px) {
+                justify-content: space-between;
+                gap: 20px;
+            }
+    }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding: 15px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        background-color: inherit;
+        color: var(--text-color-active);
+        @media screen and (max-width:768px) {
+            margin-bottom: 20px;
+            }
+    }
+
+    &__input::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        border: none;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+    }
+
+    &__icon {
+        fill: var(--backgrount-color);
+    }
+}
+

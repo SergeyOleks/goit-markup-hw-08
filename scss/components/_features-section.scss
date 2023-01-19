@@ -1,0 +1,80 @@
+/* вторая секция */
+.features {
+    padding: 95px 0;
+
+    @media screen and (max-width:768px) {
+            width: 480px;
+            margin: 0 auto;
+            padding: 60px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1599px) {
+            width: 768px;
+            flex-wrap: wrap;
+        }
+    }   
+
+    &__item-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px;
+        background-color: var(--background-button);
+        height: 120px;
+        border-radius: 4px;
+    }
+
+    &__item{
+        @media screen and (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+        } 
+    }
+
+    &__list-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-style: normal;
+        margin: 0 0 10px;
+
+        @media screen and (max-width:768px) {
+            text-align: center;
+        } 
+
+    }
+
+    &__list-text {
+        color: var(--text-color);
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        width: 270px;
+        margin: 0 0;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+
+}
+

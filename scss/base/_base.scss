@@ -1,0 +1,19 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgrount-color);
+    color: var(--primary-text-color);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+
+}
+
+.main {
+    margin: 0, auto;
+}

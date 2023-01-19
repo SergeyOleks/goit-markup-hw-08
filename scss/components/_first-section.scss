@@ -1,0 +1,106 @@
+/* первая секция */
+.first-section {
+    margin: 0 auto;
+    // padding: 200px 0;
+
+    @media screen and (max-width:1600px) {
+        padding: 0;
+    }  
+
+    &__container {
+        // height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            height: 400px;
+            padding: 118px 0;
+            background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small@2x.jpg);
+            }
+    }
+
+        @media screen and (min-width:768px) {
+            max-width: 768px;
+            height: 400px;
+            padding: 118px 0;
+            background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium@2x.jpg);
+            }
+        }
+
+        @media screen and (min-width:1600px) {
+            max-width: 1600px;
+            height: 600px;
+
+
+            background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main@2x.jpg);
+            }   
+        }
+    }
+
+    &__tittle {
+    width: 696px;
+    margin: 0 0 30px;
+
+    color: var(--text-color-active);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (max-width:1600px) {
+        width: 360px;        
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    
+
+    }
+
+    &__button {
+    display: inline-block;
+    width: 216px;
+    height: 50px;
+    min-height: 50px;
+
+    background-color: var(--text-color-buttonlink);
+    color: var(--text-color-active);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    }
+}
