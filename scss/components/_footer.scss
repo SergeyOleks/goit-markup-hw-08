@@ -13,7 +13,7 @@
             align-items: center;        
         }
 
-        @media screen and (min-width:768px) and (max-width:1599px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -34,7 +34,7 @@
                 align-items: center;        
             }
         
-        @media screen and (min-width:768px) and (max-width:1599px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
                 align-items: center;
             }
     }
@@ -71,7 +71,7 @@
                 align-items: center;
                 margin: 0 auto 60px auto;        
             }
-        @media screen and (min-width:768px) and (max-width:1599px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
             margin: 0 0 0 160px;
 
            }
@@ -87,7 +87,7 @@
         color: var(--text-color-active);
         text-transform: uppercase;
 
-        @media screen and (max-width:1599px) {
+        @media screen and (max-width:1199px) {
                 text-align: center;
             }
     }

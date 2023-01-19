@@ -23,7 +23,7 @@
             display: block;
         }
 
-        @media screen and (min-width:768px) and (max-width:1599px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
             width: 768px;
             flex-wrap: wrap;
         }
@@ -37,6 +37,10 @@
         background-color: var(--background-button);
         height: 120px;
         border-radius: 4px;
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+               width: 354px;
+            }
     }
 
     &__item{
@@ -73,6 +77,10 @@
 
         @media screen and (max-width:768px) {
             width: 100%;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 354px;
         }
     }
 

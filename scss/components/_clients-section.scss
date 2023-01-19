@@ -1,16 +1,17 @@
 /* Наші клієнти */
 .clients {
-    margin: 0 0 95px;
+    // margin: 0 0 95px;
+    padding: 95px 0;
 
-        @media screen and (max-width:768px) { 
-            margin: 0;
-            padding: 60px 0;               
-        }
+    @media screen and (max-width:1159px) { 
+        margin: 0;
+        padding: 60px 0;               
+    }
 
     &__head {
         display: block;
         text-align: center;
-        margin: 94px 0 50px;
+        margin: 0 0 50px;
         font-size: 36px;
         line-height: 1.17;
         letter-spacing: 0.03em;
@@ -19,8 +20,8 @@
             margin: 0 0 30px;                   
         }
 
-        @media screen and (min-width:768px) and (max-width:1599px) {
-            margin: 60px 0 50px;
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            margin: 0 0 50px;
         }
     }
 
@@ -37,7 +38,7 @@
             margin: 0 auto;
             flex-wrap: wrap;            
         }
-        @media screen and (min-width:768px) and (max-width:1599px) {
+        @media screen and (min-width:768px) and (max-width:1199px) {
             flex-wrap: wrap;
         }
     }
@@ -51,13 +52,20 @@
         height: 92px;
         margin: 0;
         padding: 0;
-
+            border: 1px solid var(--color-fill-icons);  
         border-radius: 4px;
+
+
         @media screen and (max-width:768px) {
             width: 210px;      
         }
 
 
+    }
+
+    &__list__item{
+        // border: 1px solid var(--color-fill-icons);
+        border-radius: 4px; 
     }
 
     &__list-icon {

@@ -49,7 +49,7 @@ body {
 .about {
   padding: 0 0 95px;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1200px) {
   .about {
     display: none;
   }
@@ -106,6 +106,7 @@ body {
   opacity: 1;
   -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -156,7 +157,7 @@ body {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .works {
     padding: 14px 0 60px 0;
   }
@@ -216,9 +217,9 @@ body {
 
 /* Наші клієнти */
 .clients {
-  margin: 0 0 95px;
+  padding: 95px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1159px) {
   .clients {
     margin: 0;
     padding: 60px 0;
@@ -227,7 +228,7 @@ body {
 .clients__head {
   display: block;
   text-align: center;
-  margin: 94px 0 50px;
+  margin: 0 0 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -237,9 +238,9 @@ body {
     margin: 0 0 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__head {
-    margin: 60px 0 50px;
+    margin: 0 0 50px;
   }
 }
 .clients__list {
@@ -262,7 +263,7 @@ body {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -282,12 +283,16 @@ body {
   height: 92px;
   margin: 0;
   padding: 0;
+  border: 1px solid var(--color-fill-icons);
   border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
   .clients__list-link {
     width: 210px;
   }
+}
+.clients__list__item {
+  border-radius: 4px;
 }
 .clients__list-icon {
   width: 100%;
@@ -324,14 +329,66 @@ body {
   color: var(--text-color-buttonlink);
   fill: var(--text-color-buttonlink);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .email {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
 
 /* первая секция */
 .first-section {
   margin: 0 auto;
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 768px) {
   .first-section {
-    padding: 0;
+    width: 480px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-small.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small.jpg);
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-small@2x.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .first-section {
+    max-width: 768px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-medium.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-medium@2x.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-section {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main@2x.jpg);
+    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main@2x.jpg);
   }
 }
 .first-section__container {
@@ -348,53 +405,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (max-width: 768px) {
-  .first-section__container {
-    width: 100%;
-    height: 400px;
-    padding: 118px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-small.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small.jpg);
-  }
-}
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
-  .first-section__container {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-small@2x.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-small@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .first-section__container {
-    max-width: 768px;
-    height: 400px;
-    padding: 118px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-medium.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .first-section__container {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main-medium@2x.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main-medium@2x.jpg);
-  }
-}
-@media screen and (min-width: 1600px) {
-  .first-section__container {
-    max-width: 1600px;
-    height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main.jpg);
-  }
-}
-@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
-  .first-section__container {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-gradient)), to(var(--background-gradient))), url(../images/main@2x.jpg);
-    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/main@2x.jpg);
-  }
 }
 .first-section__tittle {
   width: 696px;
@@ -407,7 +417,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .first-section__tittle {
     width: 360px;
     font-style: normal;
@@ -464,7 +474,7 @@ body {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -503,7 +513,7 @@ body {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__address-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -549,7 +559,7 @@ body {
     margin: 0 auto 60px auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__social-container {
     margin: 0 0 0 160px;
   }
@@ -564,7 +574,7 @@ body {
   color: var(--text-color-active);
   text-transform: uppercase;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .footer__social-text {
     text-align: center;
   }
@@ -606,7 +616,7 @@ body {
   margin: 14px 0;
   width: 350px;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form__label {
     text-align: center;
   }
@@ -618,7 +628,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .footer-form__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -632,7 +642,7 @@ body {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -939,7 +949,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     width: 768px;
     -ms-flex-wrap: wrap;
@@ -960,6 +970,11 @@ body {
   background-color: var(--background-button);
   height: 120px;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__item-container {
+    width: 354px;
+  }
 }
 @media screen and (max-width: 768px) {
   .features__item {
@@ -1003,6 +1018,11 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list-text {
+    width: 354px;
+  }
+}
 
 /*gallery*/
 .gallery {
@@ -1019,7 +1039,7 @@ body {
       align-content: center;
   padding: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1032,7 +1052,7 @@ body {
   list-style: none;
   border: 1px solid var(--color-border);
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery__item {
     width: 354px;
     height: 440PX;
@@ -1165,7 +1185,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1422,6 +1442,12 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .phone {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
 
 /*секция наша команда */
 .team {
@@ -1442,10 +1468,11 @@ body {
   letter-spacing: 0.03em;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .team__head {
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
     width: 480px;
+    text-align: center;
   }
 }
 .team__list {
@@ -1474,7 +1501,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1574,7 +1601,7 @@ body {
     height: 374px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__image {
     width: 270px;
     height: 260px;
@@ -1592,12 +1619,12 @@ body {
     width: 480px;
   }
 }
-@media screen and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
