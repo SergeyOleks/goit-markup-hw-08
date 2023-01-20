@@ -6,8 +6,8 @@
     background-color: var(--background-button);
 
     @media screen and (max-width:768px) {
-           width: 480px;   
-        }
+        width: 480px;
+    }
 
     &__head {
         margin: 0 0 50px;
@@ -35,9 +35,10 @@
         padding: 0;
 
         @media screen and (max-width:768px) {
-            flex-direction: column;
-            justify-content: center;
-            margin: 0;
+            // flex-direction: column;
+            // justify-content: center;
+            display: block;
+
         }
 
         @media screen and (min-width:768px) and (max-width:1199px) {
@@ -54,8 +55,15 @@
         @media screen and (max-width:768px) {              
             justify-content: center;
             width: 450px;
+         
         }
     }
+    @media screen and (max-width:768px) {
+            &__list> &__card:not(:last-child){
+                margin: 0 0 30px;
+            }    
+        }
+
 
     &__card-name {
         margin: 0;
