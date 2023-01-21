@@ -1,14 +1,18 @@
 /* первая секция */
 .first-section {
     margin: 0 auto;
-    padding: 200px 0;
+
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @media screen and (max-width:768px) {
-        width: 480px;
+        max-width: 480px;
         height: 400px;
         margin: 0 auto;
         padding: 118px 0;
@@ -47,6 +51,8 @@
     }
 
 &__container{
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,9 +71,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (max-width:1200px) {
-        width: 360px;        
-
+    @media screen and (max-width:1199px) {
+        width: 100%;        
+        // margin: 0 auto;
         font-style: normal;
         font-weight: 900;
         font-size: 26px;
